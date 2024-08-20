@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/button_blank1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlankFragment2">
+
+
+    <ImageButton
+        android:id="@+id/imageButtonBlank"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/baseline_navigate_next_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBlank1" />
+
+    <ImageView
+        android:id="@+id/imageViewBlank1"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/first" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:ems="15"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:hint="Title"
+        android:maxLength="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBlank1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    android:ems у EditText використовується для визначення ширини елемента в одиницях ем (ems). Це специфічний спосіб встановлення ширини EditText в залежності від кількості символів, які вона може вмістити. Ось детальніше:-->
+<!--    Гнучкість: Це дозволяє розміщувати EditText таким чином, щоб він автоматично підлаштовувався під текстовий вміст, особливо корисно при зміні шрифту або розміру шрифту.-->
+
+<!--    Сумісність з різними шрифтами: Оскільки одиниці ems є відносними, вони краще працюють при використанні різних шрифтів та їх розмірів, ніж абсолютні одиниці, як пікселі.-->

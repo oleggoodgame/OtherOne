@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_button"
+        android:checked="true"
+
+        android:icon="@drawable/baseline_menu_24"
+        android:onClick="Menu"
+        android:background="@drawable/button_drawable"
+        android:title="Menu" />
+    <item
+        android:id="@+id/navigation_spacer_2"
+        android:enabled="false"
+        android:icon="@android:color/transparent"
+        android:title="" />
+    <item android:title="Home"
+        android:id="@+id/mainFragment"
+        android:icon="@drawable/home_drawable"/>
+
+    <item android:title="List"
+        android:id="@+id/recyclerFragment"
+        android:icon="@drawable/list_drawable"/>
+    <item android:title="Add"
+        android:id="@+id/addFragment"
+
+        android:icon="@drawable/add_drawable"/>
+</menu>
